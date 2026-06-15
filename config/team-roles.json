@@ -1,0 +1,146 @@
+{
+  "team": "Tico Cross-Border E-commerce Team",
+  "description": "专属于Tico的跨境外贸Team协作系统",
+  "roles": [
+    {
+      "id": "sales",
+      "name": "销售岗位",
+      "description": "负责客户开发、订单管理、客户维护",
+      "color": "#1f6feb",
+      "icon": "📈",
+      "responsibilities": [
+        "客户开发和维护",
+        "订单跟踪",
+        "客户反馈收集",
+        "销售预测",
+        "客户关系管理"
+      ],
+      "permissions": [
+        "create-issue",
+        "assign-self",
+        "add-comment",
+        "view-dashboard"
+      ],
+      "github-label": "sales",
+      "issue-template": "sales-customer-request.md",
+      "assignees": []
+    },
+    {
+      "id": "pm",
+      "name": "产品经理岗位",
+      "description": "产品规划、需求评审、版本管理",
+      "color": "#238636",
+      "icon": "🎯",
+      "responsibilities": [
+        "产品规划和路线图",
+        "需求评审和优先级",
+        "功能规格定义",
+        "发布管理",
+        "市场分析"
+      ],
+      "permissions": [
+        "create-issue",
+        "assign-issue",
+        "manage-labels",
+        "close-issue",
+        "view-dashboard"
+      ],
+      "github-label": "product-management",
+      "issue-template": "pm-feature-request.md",
+      "assignees": []
+    },
+    {
+      "id": "operations",
+      "name": "运营岗位",
+      "description": "物流、库存、合规、支付",
+      "color": "#d1242f",
+      "icon": "📦",
+      "responsibilities": [
+        "订单履行",
+        "物流管理",
+        "库存控制",
+        "清关申报",
+        "支付处理",
+        "事项处理"
+      ],
+      "permissions": [
+        "create-issue",
+        "assign-issue",
+        "add-comment",
+        "view-dashboard",
+        "manage-labels"
+      ],
+      "github-label": "operations",
+      "issue-template": "ops-incident.md",
+      "assignees": []
+    },
+    {
+      "id": "finance",
+      "name": "会计岗位",
+      "description": "财务管理、成本控制、税务合规",
+      "color": "#9e6a03",
+      "icon": "💰",
+      "responsibilities": [
+        "财务报告",
+        "成本核算",
+        "费用管理",
+        "税务申报",
+        "审计追溯",
+        "现金流管理"
+      ],
+      "permissions": [
+        "create-issue",
+        "assign-issue",
+        "add-comment",
+        "view-dashboard"
+      ],
+      "github-label": "finance",
+      "issue-template": "finance-report.md",
+      "assignees": []
+    },
+    {
+      "id": "legal",
+      "name": "法务岗位",
+      "description": "合同管理、风险评估、法规遵从",
+      "color": "#5c2d91",
+      "icon": "⚖️",
+      "responsibilities": [
+        "合同管理",
+        "法律审查",
+        "风险评估",
+        "合规检查",
+        "争议处理",
+        "法律培训"
+      ],
+      "permissions": [
+        "create-issue",
+        "assign-issue",
+        "add-comment",
+        "view-dashboard"
+      ],
+      "github-label": "legal",
+      "issue-template": "legal-compliance.md",
+      "assignees": []
+    }
+  ],
+  "automation-rules": {
+    "auto-assign": true,
+    "auto-label": true,
+    "auto-notify": true,
+    "cross-team-collaboration": true
+  },
+  "integrations": {
+    "slack": {
+      "enabled": false,
+      "webhook-url": ""
+    },
+    "dingtalk": {
+      "enabled": false,
+      "webhook-url": ""
+    },
+    "wechat-work": {
+      "enabled": false,
+      "webhook-url": ""
+    }
+  }
+}
