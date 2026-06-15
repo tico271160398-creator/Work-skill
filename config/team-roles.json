@@ -1,19 +1,65 @@
 {
-  "team": "Tico Cross-Border E-commerce Team",
-  "description": "专属于Tico的跨境外贸Team协作系统",
+  "team": "Tico 新能源跨境电商 Facebook投流 Team",
+  "description": "专属于Tico的新能源产品跨境外贸Facebook投流Team协作系统",
+  "industry": "新能源（太阳能板、太阳能路灯、逆变器、便携式户外灯）",
+  "channel": "Facebook投流",
+  "primary_markets": ["越南", "菲律宾", "马来西亚", "新加坡"],
+  "secondary_markets": ["尼日利亚", "加纳", "肯尼亚", "南非", "阿联酋", "沙特"],
+  "products": [
+    {
+      "id": "solar_panel",
+      "name": "太阳能板",
+      "power_range": "50W-400W",
+      "efficiency": "18-22%",
+      "certifications": ["IEC 61215", "CE", "CQC"],
+      "target_markets": ["all"],
+      "key_features": ["高效率", "25年寿命", "防水防盐"]
+    },
+    {
+      "id": "solar_street_light",
+      "name": "太阳能路灯",
+      "power_range": "20W-200W",
+      "battery_capacity": "12-50Ah",
+      "certifications": ["IP65", "IEC 60598", "CE"],
+      "target_markets": ["all"],
+      "key_features": ["节能", "无需布线", "智能控制"]
+    },
+    {
+      "id": "inverter",
+      "name": "逆变器",
+      "power_range": "1kW-10kW",
+      "efficiency": "95%+",
+      "certifications": ["CE", "FCC", "RoHS"],
+      "target_markets": ["all"],
+      "key_features": ["高效率", "多重保护", "远程监控"]
+    },
+    {
+      "id": "portable_light",
+      "name": "便携式户外灯",
+      "power_range": "5W-50W",
+      "battery_capacity": "2000-20000mAh",
+      "waterproof_rating": "IP54-IP67",
+      "certifications": ["CE", "RoHS", "FCC"],
+      "target_markets": ["all"],
+      "key_features": ["轻便", "防水", "快充", "太阳能充电"]
+    }
+  ],
   "roles": [
     {
       "id": "sales",
       "name": "销售岗位",
-      "description": "负责客户开发、订单管理、客户维护",
+      "description": "负责客户开发、FB投流分析、商机转化、销售漏斗管理",
       "color": "#1f6feb",
-      "icon": "📈",
+      "icon": "📊",
       "responsibilities": [
-        "客户开发和维护",
-        "订单跟踪",
-        "客户反馈收集",
-        "销售预测",
-        "客户关系管理"
+        "Facebook投流活动管理",
+        "客户线索开发和跟进",
+        "FB受众定位和优化",
+        "销售漏斗管理",
+        "ROI分析和优化",
+        "地区市场开拓",
+        "客户关系维护",
+        "报价单生成和跟进"
       ],
       "permissions": [
         "create-issue",
@@ -22,21 +68,24 @@
         "view-dashboard"
       ],
       "github-label": "sales",
-      "issue-template": "sales-customer-request.md",
+      "issue-template": "sales-fb-campaign.md",
       "assignees": []
     },
     {
       "id": "pm",
       "name": "产品经理岗位",
-      "description": "产品规划、需求评审、版本管理",
+      "description": "负责产品策略、市场分析、定价、供应链管理、合规检查",
       "color": "#238636",
       "icon": "🎯",
       "responsibilities": [
-        "产品规划和路线图",
-        "需求评审和优先级",
-        "功能规格定义",
-        "发布管理",
-        "市场分析"
+        "产品战略规划",
+        "市场分析和细分",
+        "地区定价策略",
+        "产品合规检查",
+        "竞品分析",
+        "需求预测",
+        "产品认证管理",
+        "供应链优化"
       ],
       "permissions": [
         "create-issue",
@@ -46,22 +95,24 @@
         "view-dashboard"
       ],
       "github-label": "product-management",
-      "issue-template": "pm-feature-request.md",
+      "issue-template": "pm-market-analysis.md",
       "assignees": []
     },
     {
       "id": "operations",
       "name": "运营岗位",
-      "description": "物流、库存、合规、支付",
+      "description": "负责订单履行、物流、清关、库存、流程跟踪",
       "color": "#d1242f",
       "icon": "📦",
       "responsibilities": [
-        "订单履行",
-        "物流管理",
+        "订单履行管理",
+        "多地区物流路由",
+        "海关清关管理",
         "库存控制",
-        "清关申报",
-        "支付处理",
-        "事项处理"
+        "物流成本优化",
+        "交付跟踪",
+        "事项处理",
+        "流程改进"
       ],
       "permissions": [
         "create-issue",
@@ -71,22 +122,24 @@
         "manage-labels"
       ],
       "github-label": "operations",
-      "issue-template": "ops-incident.md",
+      "issue-template": "ops-order.md",
       "assignees": []
     },
     {
       "id": "finance",
       "name": "会计岗位",
-      "description": "财务管理、成本控制、税务合规",
+      "description": "负责财务管理、汇率管理、税务合规、成本控制",
       "color": "#9e6a03",
       "icon": "💰",
       "responsibilities": [
-        "财务报告",
-        "成本核算",
+        "多币种财务管理",
+        "汇率转换和损益",
+        "成本分配",
+        "月度财务报表",
+        "各国税务申报",
         "费用管理",
-        "税务申报",
-        "审计追溯",
-        "现金流管理"
+        "审计跟踪",
+        "财务合规检查"
       ],
       "permissions": [
         "create-issue",
@@ -101,16 +154,18 @@
     {
       "id": "legal",
       "name": "法务岗位",
-      "description": "合同管理、风险评估、法规遵从",
+      "description": "负责合同管理、出口合规、风险评估、产品认证",
       "color": "#5c2d91",
       "icon": "⚖️",
       "responsibilities": [
-        "合同管理",
-        "法律审查",
+        "国际合同管理",
+        "出口法规审查",
+        "产品认证追踪",
         "风险评估",
-        "合规检查",
+        "广告内容合规",
+        "数据隐私合规",
         "争议处理",
-        "法律培训"
+        "定期合规审计"
       ],
       "permissions": [
         "create-issue",
@@ -119,17 +174,134 @@
         "view-dashboard"
       ],
       "github-label": "legal",
-      "issue-template": "legal-compliance.md",
+      "issue-template": "legal-contract.md",
       "assignees": []
     }
   ],
+  "markets": {
+    "primary": [
+      {
+        "code": "VN",
+        "name": "越南 (Vietnam)",
+        "population": "9700万",
+        "currency": "越南盾 (VND)",
+        "exchange_rate": "1 USD = ~23,000 VND",
+        "vat": "10%",
+        "tariff": "10-20%",
+        "fb_users": "1.15亿+",
+        "payment_methods": ["支付宝", "微信支付", "银行转账"],
+        "language": ["越南语", "英语"],
+        "logistics_hubs": ["胡志明市", "河内"],
+        "special_notes": "电池进口受限，需要环保证书"
+      },
+      {
+        "code": "PH",
+        "name": "菲律宾 (Philippines)",
+        "population": "1.2亿",
+        "currency": "菲律宾比索 (PHP)",
+        "exchange_rate": "1 USD = ~56 PHP",
+        "vat": "12%",
+        "tariff": "0-30%",
+        "fb_users": "1.09亿+",
+        "payment_methods": ["GCash", "PayMaya", "银行转账"],
+        "language": ["英语", "菲律宾语"],
+        "logistics_hubs": ["马尼拉"],
+        "special_notes": "岛屿众多，物流成本高；进口税较高"
+      },
+      {
+        "code": "MY",
+        "name": "马来西亚 (Malaysia)",
+        "population": "3400万",
+        "currency": "马来西亚林吉特 (MYR)",
+        "exchange_rate": "1 USD = ~4.5 MYR",
+        "vat": "6% SST",
+        "tariff": "0-20%",
+        "fb_users": "2300万+",
+        "payment_methods": ["FPX", "银行转账", "在线支付"],
+        "language": ["英语", "马来语"],
+        "logistics_hubs": ["吉隆坡", "槟城"],
+        "special_notes": "可再生能源政策支持，市场专业化程度高"
+      },
+      {
+        "code": "SG",
+        "name": "新加坡 (Singapore)",
+        "population": "570万",
+        "currency": "新加坡元 (SGD)",
+        "exchange_rate": "1 USD = ~1.35 SGD",
+        "gst": "8%",
+        "tariff": "0% (大多数产品)",
+        "fb_users": "450万+",
+        "payment_methods": ["PayLah!", "银行转账", "信用卡"],
+        "language": ["英语", "华语", "马来语", "泰米尔语"],
+        "logistics_hubs": ["新加坡港"],
+        "special_notes": "物流成本低，是转运枢纽；客户要求高"
+      }
+    ],
+    "secondary": [
+      {
+        "code": "NG",
+        "name": "尼日利亚 (Nigeria)",
+        "region": "西非",
+        "special_notes": "太阳能需求巨大，但客户付款能力差，需要严格授信"
+      },
+      {
+        "code": "GH",
+        "name": "加纳 (Ghana)",
+        "region": "西非",
+        "special_notes": "政治稳定，太阳能市场增长快"
+      },
+      {
+        "code": "KE",
+        "name": "肯尼亚 (Kenya)",
+        "region": "东非",
+        "special_notes": "东非枢纽，绿能意识强"
+      },
+      {
+        "code": "ZA",
+        "name": "南非 (South Africa)",
+        "region": "南非",
+        "special_notes": "经济发达，技术认可度高"
+      },
+      {
+        "code": "AE",
+        "name": "阿联酋 (UAE)",
+        "region": "中东",
+        "special_notes": "迪拜太阳能需求，高购买力"
+      },
+      {
+        "code": "SA",
+        "name": "沙特 (Saudi Arabia)",
+        "region": "中东",
+        "special_notes": "Vision 2030绿能计划，巨大市场"
+      },
+      {
+        "code": "OM",
+        "name": "阿曼 (Oman)",
+        "region": "中东",
+        "special_notes": "能源转型需求"
+      },
+      {
+        "code": "QA",
+        "name": "卡塔尔 (Qatar)",
+        "region": "中东",
+        "special_notes": "高端市场、可靠性要求高"
+      }
+    ]
+  },
   "automation-rules": {
     "auto-assign": true,
     "auto-label": true,
     "auto-notify": true,
-    "cross-team-collaboration": true
+    "cross-team-collaboration": true,
+    "fb-campaign-tracking": true,
+    "multi-currency-conversion": true
   },
   "integrations": {
+    "facebook": {
+      "enabled": false,
+      "api_key": "",
+      "business_account_id": ""
+    },
     "slack": {
       "enabled": false,
       "webhook-url": ""
@@ -141,6 +313,10 @@
     "wechat-work": {
       "enabled": false,
       "webhook-url": ""
+    },
+    "accounting-software": {
+      "enabled": false,
+      "platform": "quickbooks|xero|other"
     }
   }
 }
